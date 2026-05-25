@@ -17,14 +17,18 @@ tags:
 
 ## Who I Am
 Self-taught developer. No degree. No corporate backing. No team.
-I believe sovereign intelligence belongs to the people.
+I believe sovereign intelligence belongs to the people, not corporations.
 FSI exists to give that back.
 
 ---
 
 ## What Vitalis Core Is
-An open source synthetic intelligence framework.
+This is not a wrapper. Not an API. Not another ChatGPT clone.
+This is an original synthetic intelligence framework designed and 
+built from the ground up by one developer.
+
 Not artificial intelligence. Synthetic intelligence.
+The architecture, the design, the philosophy — all original.
 
 A blank slate. You train it. You shape it. You own it completely.
 Runs locally on your device. No cloud. No tracking. No corporate control.
@@ -72,4 +76,4 @@ Contact via Community tab.
 ---
 
 ## License
-GPL-3.0 — Credit the original. What's built on this stays open. Always
+GPL-3.0 — Credit the original. What's built on this stays open. Always.
