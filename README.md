@@ -12,6 +12,9 @@ tags:
 # Vitalis Core
 ### Ferrell Synthetic Intelligence (FSI)
 **Built by Neuro_Nomad**
+⚠️ UNDER ACTIVE DEVELOPMENT — This is my first public project.
+Feedback, improvements and collaboration genuinely welcome.
+Community tab is open.
 
 ---
 
