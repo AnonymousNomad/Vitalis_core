@@ -1,0 +1,14 @@
+{
+    "active_template": null,
+    "available_templates": [
+        "cybersecurity_recon",
+        "creative_songwriter",
+        "web_streaming_ops",
+        "gaming_tactical_ai",
+        "general_assistant"
+    ],
+    "settings": {
+        "auto_save": true,
+        "visual_heartbeat_intensity": 1.0
+    }
+}
