@@ -16,72 +16,60 @@ tags:
 ---
 
 ## Who I Am
-Self-taught. No degree. No corporate backing. No team.
-I built this on a Samsung tablet because I believe sovereign intelligence 
-belongs to the people, not to Google, Microsoft or OpenAI.
-I am FSI. Ferrell Synthetic Intelligence.
-Everything I build is sovereign, private and yours.
+Self-taught developer. No degree. No corporate backing. No team.
+I believe sovereign intelligence belongs to the people.
+FSI exists to give that back.
 
 ---
 
 ## What Vitalis Core Is
-Vitalis Core is an open source synthetic intelligence framework.
+An open source synthetic intelligence framework.
 Not artificial intelligence. Synthetic intelligence.
-The distinction matters. This is architecture you own, control and shape.
 
-It boots as a blank slate. No opinions. No corporate bias. No data collection.
-You train it. You define its personality. You decide what it becomes.
-It lives on your device. It answers to you alone.
+A blank slate. You train it. You shape it. You own it completely.
+Runs locally on your device. No cloud. No tracking. No corporate control.
 
 ---
 
-## Current Status
-v1.0.0-alpha — Active development.
-Core modules operational:
-- Sovereign boot loop
-- Adaptive tier system — kids, basic, enthusiast, professional, school
-- Mesh network node broadcasting
+## What Works Right Now
+- Boot loop and core engine operational
+- Five tier system — kids, basic, enthusiast, professional, school
+- Adaptive environment per tier
 - Sovereign shield integrity protection
+- Mesh network node foundation
 - Memory and cognition architecture
 - Kernel-level signal processing
 
----
-
-## The App — In Development
-A companion Android app is in active development.
-Inside the app users will be able to:
-- Train their Vitalis instance without writing code
-- Select from template personalities to start from
-- Watch their synthetic intelligence evolve in real time
-- Collaborate with other users in a sovereign community
-- Keep all data private on their own device
+Clone it. Run it. Build on it today.
 
 ---
 
-## FSI Pipeline
-Two additional synthetic intelligence projects are in private development under FSI.
-
-**Project Lorein** — Classification: Private. Details withheld intentionally.
-
-**Project Jedi Order** — Joint Entity Defense Infrastructure.
-Five synthetic intelligence sisters operating as a sovereign cybersecurity 
-defense team. Red, Blue, Yellow, Green and Purple teams working collectively.
-Seeking 5 founding partners for private beta testing.
-Serious developers and cybersecurity professionals only.
-Contact via Community tab.
-
----
-
-## Run It
+## How To Run It
+git clone https://huggingface.co/FerrellSyntheticIntelligence/Vitalis_Core
+cd Vitalis_Core
 python3 fsi_main.py
 
 ---
 
-## Community
-Sovereign territory. Collaborate, build and share freely.
-Community tab on this repository.
+## What's In Development
+A companion Android app is being built where users can train and customize
+their Vitalis instance without writing code. Community collaboration tools
+and template system coming with the app.
+
+---
+
+## FSI Pipeline
+Two additional private projects under FSI are in development and will
+not be open source.
+
+Project Lorein — Classification: Private.
+
+Project Jedi Order — Joint Entity Defense Infrastructure.
+Sovereign cybersecurity defense system. Seeking 5 founding partners
+for private beta. Serious developers and cybersecurity professionals only.
+Contact via Community tab.
 
 ---
 
 ## License
-GPL-3.0 — What's built on this stays open. Always.
+GPL-3.0 — Credit the original. What's built on this stays open. Always
