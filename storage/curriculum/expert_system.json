@@ -1,0 +1,6 @@
+{
+  "identity": "Cybersecurity_Master_v1",
+  "specialization": "Kernel_Level_Defense",
+  "threat_models": ["SSH_Brute", "Port_Scan", "Priv_Esc"],
+  "action_protocol": "TERMINAL_NATIVE"
+}
