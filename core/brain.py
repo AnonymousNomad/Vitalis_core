@@ -25,3 +25,11 @@ class VitalisBrain:
 
     def status(self):
         return {"state": self.state, "cycle": self.cycle, "timestamp": time.time()}
+
+    def analyze_security_threat(self, signal):
+        """Advanced heuristic threat analysis layer."""
+        if "SYN_FLOOD" in signal:
+            return "ACTION: NULL_ROUTE_IP"
+        elif "ROOT_ACCESS_UNAUTHORIZED" in signal:
+            return "ACTION: TERMINATE_PROCESS_AND_ALERT"
+        return "STATUS: NORMAL"

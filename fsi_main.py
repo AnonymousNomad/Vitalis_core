@@ -13,7 +13,7 @@ from src.cognition.synthesizer import DataSynthesizer
 from src.cognition.memory import MemoryBank
 from src.cognition.action_engine import ActionEngine
 
-def heartbeat_loop():
+def heartbeat_loop(brain):
     senses = SIGINTProcessor()
     mind = DataSynthesizer()
     memory = MemoryBank()
@@ -36,7 +36,8 @@ def main():
     print("--- FSI: Vitalis Core Sovereign Intelligence ---")
     engine = VitalisEngine()
     engine.wake_up()
-    pulse = threading.Thread(target=heartbeat_loop, daemon=True)
+    brain = VitalisBrain()
+    pulse = threading.Thread(target=heartbeat_loop, args=(brain,), daemon=True)
     pulse.start()
     print("Heartbeat: Online")
     role = input("Enter Tier (kids/basic/enthusiast/professional/school): ")
@@ -46,7 +47,6 @@ def main():
     broadcast_node_presence("Neuro_Nomad_Node", role)
     print(monitor_integrity("Status_Check"))
     print("--- System Fully Integrated ---")
-    brain = VitalisBrain()
     talker = VitalisTalker(role)
     print("Vitalis is ready. Type 'exit' to quit.")
     while True:
