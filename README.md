@@ -1,3 +1,7 @@
+#synthetic-intelligence
+#sovereign-ai,
+#gpl-3.0
+
 Veritas_Core
 
 ​Veritas_Core is a high-performance, sovereign synthetic intelligence framework engineered for local, air-gapped deployment. Designed for modularity and kernel-level integration, it provides the fundamental cognitive and sensory infrastructure required for autonomous synthetic entities.
