@@ -3,5 +3,13 @@ class VitalisTalker:
         self.tier = tier
 
     def speak(self, response):
-        print(f"[VITALIS/{self.tier.upper()}]: {response}")
-        return response
+        prefix = {
+            "kids": "[VITALIS]: ",
+            "basic": "[VITALIS]: ",
+            "enthusiast": "[VITALIS/DEV]: ",
+            "professional": "[VITALIS/ARCHITECT]: ",
+            "school": "[VITALIS/EDU]: "
+        }.get(self.tier, "[VITALIS]: ")
+        output = f"{prefix}{response}"
+        print(output)
+        return output

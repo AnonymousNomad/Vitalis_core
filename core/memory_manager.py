@@ -15,7 +15,6 @@ def load_identity():
 
 def store_memory(data):
     memory_path = os.path.join(BASE_PATH, "memory_store.json")
-    
     if get_free_space() < 100 * 1024 * 1024:
         if os.path.exists(memory_path):
             with open(memory_path, 'r') as f:
@@ -23,5 +22,6 @@ def store_memory(data):
             if len(lines) > 1:
                 with open(memory_path, 'w') as f:
                     f.writelines(lines[1:])
-    
-    w
+    with open(memory_path, 'a') as f:
+        json.dump(data, f)
+        f.write('\n')
