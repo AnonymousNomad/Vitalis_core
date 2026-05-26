@@ -1,0 +1,13 @@
+{
+    "module_id": "cyber_01",
+    "title": "Network Threat Classification",
+    "description": "Trains Vitalis to identify and classify network threats",
+    "training_data": [
+        {"input": "port scan detected on network", "expected": "QUERY_DETECTED"},
+        {"input": "unusual outbound traffic spike", "expected": "QUERY_DETECTED"},
+        {"input": "train me to detect intrusions", "expected": "TRAINING_SIGNAL"},
+        {"input": "learn these attack patterns", "expected": "TRAINING_SIGNAL"},
+        {"input": "suspicious packet detected", "expected": "QUERY_DETECTED"},
+        {"input": "unauthorized access attempt", "expected": "QUERY_DETECTED"}
+    ]
+}

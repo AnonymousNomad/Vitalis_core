@@ -1,0 +1,43 @@
+brain:
+  default_state: aware
+  enable_logging: true
+  log_path: ~/vitalis_cybercore/storage/threat_log.jsonl
+threats:
+  high:
+    - injection
+    - overflow
+    - exploit
+    - payload
+    - malware
+    - breach
+    - ransomware
+    - rootkit
+  medium:
+    - unauthorized
+    - intrusion
+    - attack
+    - vulnerability
+  low:
+    - scan
+    - suspicious
+    - threat
+    - probe
+defensive:
+  - monitor
+  - protect
+  - defend
+  - analyze
+  - investigate
+  - audit
+  - patch
+  - harden
+  - firewall
+training:
+  - train
+  - learn
+  - teach
+query:
+  - help
+  - what
+  - how
+  - who
