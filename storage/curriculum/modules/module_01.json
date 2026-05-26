@@ -1,1 +1,13 @@
-{"id": "module_01", "name": "Signals Intelligence Basics", "difficulty": 1}
+{
+    "module_id": "module_01",
+    "title": "Basic Input Recognition",
+    "description": "Trains Vitalis to correctly categorize basic input types",
+    "training_data": [
+        {"input": "how do you work", "expected": "QUERY_DETECTED"},
+        {"input": "what are you", "expected": "QUERY_DETECTED"},
+        {"input": "train me on this", "expected": "TRAINING_SIGNAL"},
+        {"input": "learn from this data", "expected": "TRAINING_SIGNAL"},
+        {"input": "hello", "expected": "INPUT_RECEIVED"},
+        {"input": "build something new", "expected": "INPUT_RECEIVED"}
+    ]
+}
