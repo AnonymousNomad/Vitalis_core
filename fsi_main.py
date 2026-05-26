@@ -23,7 +23,7 @@ def heartbeat_loop(brain):
         raw_signal = senses.listen_to_traffic()
         
         # Security Gate: High-priority threat analysis
-        security_verdict = brain.analyze_security_threat(raw_signal)
+        security_verdict = brain.process(raw_signal).status
         if "ACTION" in security_verdict:
             interpretation = security_verdict
         else:
