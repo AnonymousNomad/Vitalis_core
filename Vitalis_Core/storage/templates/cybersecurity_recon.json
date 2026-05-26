@@ -1,0 +1,13 @@
+{
+    "template_id": "cybersecurity_recon",
+    "description": "Optimized for network reconnaissance and packet analysis.",
+    "hyperparameters": {
+        "learning_rate": 0.0001,
+        "batch_size": 32,
+        "optimizer": "adam"
+    },
+    "behavior_constraints": {
+        "precision_priority": true,
+        "verbose_logging": false
+    }
+}

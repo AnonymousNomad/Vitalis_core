@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+vitalis_shadow
+memory_store.json
+vitalis_memory.csv
+memory_stream.jsonl
