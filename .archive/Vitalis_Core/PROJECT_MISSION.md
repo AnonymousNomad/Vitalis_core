@@ -1,0 +1,1 @@
+FSI_PROJECT_DECLARATION: Vitalis-Core serves as the foundational modular cognitive interface within the FSI triad. This framework provides the baseline architecture for sovereign, user-directed synthetic intelligence, enabling the integration of custom sensory inputs and cognitive memory structures independent of centralized corporate influence.

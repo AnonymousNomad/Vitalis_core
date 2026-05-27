@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .venv/
 __pycache__/
 vitalis/src/**/__pycache__/
@@ -7,3 +8,13 @@ vitalis/src/**/__pycache__/
 *.json
 *.csv
 storage/
+=======
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+vitalis_shadow
+memory_store.json
+vitalis_memory.csv
+memory_stream.jsonl
+>>>>>>> c3ceffd7c7253d3cb91ddea5998e5dc497615daa

@@ -99,3 +99,4 @@
 {"timestamp": 1779834455.9398422, "thought": "THREAT_DETECTED [HIGH]", "status": "active", "heartbeat": "pulse_normal"}
 {"timestamp": 1779834455.9427948, "thought": "DEFENSIVE_ACTION", "status": "active", "heartbeat": "pulse_normal"}
 {"timestamp": 1779834455.945846, "thought": "INPUT_RECEIVED", "status": "active", "heartbeat": "pulse_normal"}
+{"timestamp": 1779911937.3992867, "thought": "INPUT_RECEIVED: hello", "status": "active", "heartbeat": "pulse_normal"}
