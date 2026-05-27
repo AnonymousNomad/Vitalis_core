@@ -1,7 +1,3 @@
-gradio[oauth,mcp]==6.15.1
 huggingface_hub
 pandas
 numpy
-pydantic
-uvicorn
-spaces
