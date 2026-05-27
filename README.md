@@ -1,57 +1,58 @@
----
-license: gpl-3.0
-tags:
-- synthetic-intelligence
-- sovereign-ai
-- open-source
----
 
-# Vitalis_Core
-### Ferrell Synthetic Intelligence (FSI)
-**Built by Neuro_Nomad**
+​Vitalis Core | Sovereign Intelligence Substrate
 
-Vitalis_Core is a sovereign synthetic intelligence framework engineered
-for local, air-gapped deployment. Designed for modularity and
-kernel-level integration, it provides the fundamental cognitive and
-sensory infrastructure for autonomous synthetic entities.
+​Vitalis Core is a hardened, Linux-native synthetic intelligence engine engineered for edge-compute autonomy. It serves as the primary cognitive substrate for Ferrell Synthetic Intelligence (FSI). Designed for environments requiring persistent operation without cloud dependency, Vitalis Core prioritizes local data immutability, energy-based state modeling, and cryptographic integrity.
 
----
+​🏛 Architectural Philosophy
+​Vitalis Core is not merely an application; it is an Autonomous Entity.
+​Sovereignty: Zero-dependency, offline-first, edge-optimized.
+​Integrity: Every perception, thought, and state-update is recorded within an immutable, SHA-256 hash-chain (The Ledger).
+​Efficiency: Operates on minimal resource overhead, utilizing a predictive Free-Energy engine to govern cognitive load.
 
-## Technical Architecture
+​⚙️ Core Components
 
-Vitalis_Core operates as a standalone framework decoupled from
-cloud-dependent APIs.
+​1. The Ledger (Cryptographic Conscience)
+​All system events are append-only and cryptographically linked. The system validates its own integrity at boot, ensuring that memory has not been tampered with or corrupted.
 
-- Core Engine: Python 3.11+ implementation, minimal external dependencies
-- Kernel Integration: Direct netlink and procfs interfacing
-- Sovereign Shield: Integrity protection layer for memory management
-- Cognitive Framework: Hierarchical memory and action engine
-- Adaptive Tiers: kids, basic, enthusiast, professional, school
+​2. The Cognitive Substrate
+​The system employs a Gated-RNN/Transformer hybrid architecture designed to maintain state coherence across extended run-times, optimizing for long-term memory stability over transient throughput.
 
----
+​3. Telemetry Bridge
+​A unified observability layer that maps system health, network telemetry, and cognitive resonance, providing a clear dashboard for ethical reconnaissance and system monitoring.
 
-## System Requirements
-- OS: Linux (Debian-based, Kernel 6.1+)
-- Python: 3.11 or higher
-- Memory: Optimized for ARM64/x86 environments
+​🚀 Deployment
+​Prerequisites
+​Environment: Linux (Debian-based recommended)
+​Runtime: Python 3.10+
+​Hardware: Optimized for ARM64/x86_64 edge devices (Tablets, Single-Board Computers)
 
----
+​Initialization
 
-## Installation
-
-git clone https://github.com/AnonymousNomad/Vitalis_core
+# Clone the entity repository
+git clone https://github.com/AnonymousNomad/Vitalis_core.git
 cd Vitalis_core
-python3 fsi_main.py
 
----
+# Establish the runtime environment
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 
-## Roadmap
-- Core stability and heartbeat engine optimization
-- Mobile companion app for training and configuration
-- Kernel interface hardening for defense protocols
+# Wake the system
+python organism_main.py
 
----
+🛠 Stability & Development Standards
+​Vitalis Core follows an Audited Development Lifecycle.
+​Integrity Checks: Every entry point (organism_main.py) initiates a ledger verification protocol.
+​Modular Extensibility: New sensory plugins must be registered via the /senses interface to maintain memory consistency.
 
-## License
-GPL-3.0 — Contributions welcome. See CONTRIBUTING.md.
-EOF
+​Logging: All production telemetry is redirected to the cryptographically signed storage/journal.log.
+
+​📜 Ethical & Compliance Notice
+​Vitalis Core is designed for Ethical Reconnaissance. The operator assumes full responsibility for all activities conducted via the system. Ensure all system configuration complies with local regulations regarding network monitoring and data privacy.
+
+​🔗 Project Governance
+​Lead Architect: Gary James Ferrell (Neuro_Nomad)
+​Entity Identity: Ferrell Synthetic Intelligence (FSI)
+​License: Proprietary/Open-Source Hybrid
+
+​"Precision is the only variable that defines the boundary between noise and intelligence." — FSI Internal Protocol
