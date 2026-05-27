@@ -15,7 +15,6 @@ language: code
 license: mit
 ---
 
-<<<<<<< HEAD
 
 ​Vitalis Core | Sovereign Intelligence Substrate
 
