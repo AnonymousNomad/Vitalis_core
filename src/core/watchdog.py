@@ -1,14 +1,12 @@
 import os, hashlib, json
 from pathlib import Path
 
-def get_vault_path():
-    return Path(__file__).parents[2] / "storage" / "knowledge"
+def get_vault_path(): return Path(__file__).parents[2] / "storage" / "knowledge"
 
 def _hash_file(p: Path) -> str:
     h = hashlib.sha256()
     with p.open("rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            h.update(chunk)
+        for chunk in iter(lambda: f.read(8192), b""): h.update(chunk)
     return h.hexdigest()
 
 def verify_vault() -> bool:
