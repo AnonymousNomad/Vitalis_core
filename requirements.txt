@@ -1,7 +1,9 @@
-gradio==6.15.1
-spaces
-sentence-transformers
 torch
 sentence-transformers
+<<<<<<< Updated upstream
+torch
+sentence-transformers
+=======
+>>>>>>> Stashed changes
 numpy
 transformers
