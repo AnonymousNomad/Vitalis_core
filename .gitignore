@@ -5,3 +5,12 @@ __pycache__/
 *.bak
 *.log
 storage/knowledge/
+.archive/
+.venv/
+data/
+env.json
+memory_store.json
+memory_stream.jsonl
+vitalis_memory.csv
+storage/config.json
+storage/user_profiles.json
