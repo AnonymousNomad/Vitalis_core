@@ -10,7 +10,6 @@ pinned: false
 license: gpl-3.0
 ---
 Ferrell Synthetic Intelligence (FSI) – White Paper & Operations Manual
-Repository:ferrell‑synthetic‑intelligence/FSI‑NSE‑V1
 Version: 1.0
 License: Proprietary – All rights reserved by Ferrell Synthetic Intelligence
 
