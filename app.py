@@ -1,12 +1,16 @@
 import subprocess
 import sys
 
+# 1. Ensure dependencies are installed
 print("Ensuring dependencies...")
 subprocess.check_call([sys.executable, "-m", "pip", "install", "faiss-cpu"])
 
-# Now import the class
+# 2. Import AFTER the installation is guaranteed
 from src.core.memory_engine import MemoryEngine
 
-if __name__ == "__main__":
+def main():
     engine = MemoryEngine()
     print("Engine initialized successfully.")
+
+if __name__ == "__main__":
+    main()

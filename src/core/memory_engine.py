@@ -1,6 +1,6 @@
 class MemoryEngine:
     def __init__(self):
-        print("Initializing MemoryEngine...")
+        # Perform the import only when the class is instantiated
         import faiss
-        self.faiss = faiss
         print("FAISS loaded successfully.")
+        self.faiss = faiss
