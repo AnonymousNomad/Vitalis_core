@@ -15,9 +15,17 @@ Neuro-Synth Engine (NSE)
 ​The Neuro-Synth Engine (NSE) is the core technology of Ferrell Synthetic Intelligence (FSI). It is a sovereign, offline-first, fluidic intelligence architecture designed to reclaim cognitive autonomy from centralized, corporate-controlled black boxes.
 ​
 🏛️ The FSI Manifesto
-​The future of synthetic intelligence belongs to those who build, own, and defend their own cognitive infrastructure. NSE is not a service; it is a foundation.
+​
+
+The future of synthetic intelligence belongs to those who build, own, and defend their own cognitive infrastructure. NSE is not a service; it is a foundation.
+
+
 ​Sovereignty: Zero-dependency, air-gapped capability.
+
+
 ​Fluidic Intelligence: Unlike static transformer models, the NSE utilizes a Fluidic Memory Manifold (FMM) that allows for continuous, real-time learning without expensive re-training.
+
+
 ​Architecture as Ethics: By prioritizing local performance, we ensure your cognitive chain remains unbroken by third-party intervention.
 
 ​🧠 Architectural Overview: The Tri-Head Topology
