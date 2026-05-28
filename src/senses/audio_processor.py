@@ -1,6 +1,5 @@
-def capture_audio():
-    """
-    Simulates input stream from the tablet's microphone.
-    To be mapped to hardware interface in the app build phase.
-    """
-    return "Acoustic_Stream_Active"
+#!/usr/bin/env python3
+from .base_sensor import BaseSensor
+class AudioProcessor(BaseSensor):
+    def sense(self):
+        return "AUDIO_STREAM_INPUT"
