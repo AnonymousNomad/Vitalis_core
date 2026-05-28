@@ -5,6 +5,7 @@ from flask import Flask, request, jsonify, render_template_string
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from src.core.retrieval_engine import LocalRetrievalEngine
+from src.core.memory_engine import MemoryEngine
 from brain import get_ripple_payload
 
 app = Flask(__name__)
@@ -33,6 +34,36 @@ def ripple():
     except Exception as e:
         return jsonify({"error": f"Internal cognitive pipeline exception: {str(e)}"}), 500
 
+@app.route('/api/ingest', methods=['POST'])
+def hot_ingest():
+    """Triggers an online recompilation of local files into vector storage without downtime."""
+    data = request.get_json(force=True) or {}
+    target_dir = data.get("directory", "storage/knowledge")
+    
+    try:
+        print(f"[*] Hot Ingestion triggered via API for target: {target_dir}")
+        ingestor = MemoryEngine()
+        ingestor.ingest_knowledge(target_dir)
+        
+        # Verify the file generation parameters
+        base_path = os.path.join(os.getcwd(), target_dir)
+        manifest_path = os.path.join(base_path, "chunks_manifest.json")
+        
+        if os.path.exists(manifest_path):
+            with open(manifest_path, 'r') as f:
+                nodes_count = len(json.load(f))
+        else:
+            nodes_count = 0
+            
+        return jsonify({
+            "status": "SUCCESS",
+            "msg": "Sovereign knowledge matrix re-compiled successfully.",
+            "active_nodes": nodes_count,
+            "timestamp": time.time()
+        })
+    except Exception as e:
+        return jsonify({"error": f"Dynamic hot-ingestion compilation failure: {str(e)}"}), 500
+
 @app.route('/api/query', methods=['POST'])
 def semantic_query():
     data = request.get_json() or {}
@@ -49,5 +80,6 @@ def semantic_query():
         return jsonify({"error": f"Retrieval execution failure: {str(e)}"}), 500
 
 if __name__ == '__main__':
+    import json  # Localized import shield for verification tracking inside block
     print("[*] Secure Sovereign UI Gateway staging on http://127.0.0.1:5000")
     app.run(host='127.0.0.1', port=5000, debug=False)
