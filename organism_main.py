@@ -1,44 +1,34 @@
-import sys
-import os
-from core.ledger import VitalisLedger
-from core.brain import VitalisBrain
-from extensions.dreamer import Dreamer
+import time
+from src.kernel_interface.procfs_bridge import send_to_kernel, read_from_kernel
+from src.senses.sigint_processor import SIGINTProcessor
+from src.cognition.synthesizer import DataSynthesizer
+from src.cognition.memory import MemoryBank
+from src.cognition.action_engine import ActionEngine
 
-def main():
-    print("[SYSTEM] Vitalis Core Booting...")
+def main_loop():
+    senses = SIGINTProcessor()
+    mind = DataSynthesizer()
+    memory = MemoryBank()
+    actions = ActionEngine()
     
-    # Initialize Ledger
-    ledger = VitalisLedger()
-    
-    # Cryptographic Integrity Check
-    if not ledger.verify_ledger():
-        print("[!] CRITICAL: INTEGRITY FAILURE. TAMPERING DETECTED.")
-        sys.exit(1)
+    while True:
+        system_status = read_from_kernel()
+        raw_signal = senses.listen_to_traffic()
         
-    ledger.write_entry("system_boot", {"status": "verified"})
-    
-    # Initialize Core
-    brain = VitalisBrain()
-    print("[SYSTEM] Cognitive Core Synchronized.")
-    
-    # Initialize Dreamer Extension
-    dreamer = Dreamer(brain=brain)
-    dreamer.start()
-    print("[SYSTEM] Dreamer Extension Active.")
-    
-    try:
-        while True:
-            cmd = input(">> ")
-            if cmd.lower() == "exit":
-                ledger.write_entry("system_shutdown", {"status": "clean"})
-                break
+        try:
+            byte_count = int(raw_signal.split()[-2]) if "bytes" in raw_signal else 0
+        except:
+            byte_count = 0
             
-            response = brain.process(cmd)
-            print(f"Vitalis: {response}")
-            
-    except KeyboardInterrupt:
-        ledger.write_entry("system_shutdown", {"status": "interrupt"})
-        sys.exit(0)
+        interpretation = mind.categorize_signal(byte_count)
+        action_taken = actions.execute(interpretation)
+        
+        memory.record("PULSE_2.0", raw_signal, interpretation)
+        
+        state_report = f"SYS: {system_status} | INT: {interpretation} | {action_taken}"
+        send_to_kernel(state_report)
+        print(f"Broadcast: {state_report}")
+        time.sleep(1.0)
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    main_loop()
